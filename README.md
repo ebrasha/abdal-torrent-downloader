@@ -48,7 +48,7 @@ A software designed for easy downloading from torrent sites with support for bot
 > For Iranian People -> MellatBank : 6104-3378-5301-4247
 
 ## 🤵 Programmer
-Crafted by Ebrahim Shafiei (EbraSha) with passion and enthusiasm
+Handcrafted with Passion by Ebrahim Shafiei (EbraSha)
 
 E-Mail = Prof.Shafiei@Gmail.com
 
