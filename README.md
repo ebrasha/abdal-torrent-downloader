@@ -7,7 +7,7 @@
 ## 👀 Screenshot
 
 ![](screenshot.jpg)
-![](https://github.com/ebrasha/abdal-youtube-downloader/blob/main/screenshot/screenshot.jpg)
+![](https://github.com/ebrasha/abdal-torrent-downloader/blob/main/screenshot/2024-04-27_18-59-22.jpg)
 
 
  ## 💎 General purpose
