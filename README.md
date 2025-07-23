@@ -147,10 +147,6 @@ The application features a beautiful cyberpunk-themed interface with:
 - Real-time progress indicators
 - Rich colored output for different events
 
-## 🔗 Links
-
-- **Persian Documentation**: [README.fa.md](README.fa.md)
-- **GitHub Repository**: [https://github.com/ebrasha](https://github.com/ebrasha)
 
 ## 🐛 Reporting Issues
 

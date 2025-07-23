@@ -150,10 +150,7 @@ abdal-torrent-downloader/
 - نشانگرهای پیشرفت در زمان واقعی
 - خروجی رنگی غنی برای رویدادهای مختلف
 
-## 🔗 لینک‌ها
 
-- **مستندات انگلیسی**: [README.md](README.md)
-- **مخزن GitHub**: [https://github.com/ebrasha](https://github.com/ebrasha)
 
 ## 🐛 گزارش مشکلات
 
