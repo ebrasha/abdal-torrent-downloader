@@ -127,26 +127,6 @@ SOCKS5 proxy support for enhanced privacy:
 --socks5 127.0.0.1:1080
 ```
 
-## 📁 File Structure
-
-```
-abdal-torrent-downloader/
-├── abdal-torrent-downloader.py  # Main application file
-├── requirements.txt              # Python dependencies
-├── README.md                   # English documentation
-├── README.fa.md                # Persian documentation
-├── shot.png                    # Screenshot
-└── downloads/                  # Default download directory
-```
-
-## 🎨 Screenshots
-
-The application features a beautiful cyberpunk-themed interface with:
-- Colored ASCII art banner
-- Interactive prompts with autocompletion
-- Real-time progress indicators
-- Rich colored output for different events
-
 
 ## 🐛 Reporting Issues
 
