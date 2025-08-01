@@ -5,7 +5,7 @@
 * File Name    : main.py
 * Author       : Ebrahim Shafiei (EbraSha)
 * Email        : Prof.Shafiei@Gmail.com
-* Created On   : 2024-06-09 13:00:00
+* Created On   : 2025-08-02 3:00:00
 * Description  : Main entry point for a professional torrent downloader supporting both CLI and interactive modes, with advanced features and user-friendly interface.
 * -------------------------------------------------------------------
 *
@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 import readline
 from prompt_toolkit import prompt
-from prompt_toolkit.completion import WordCompleter
+from prompt_toolkit.completion import WordCompleter, PathCompleter
 from rich.console import Console
 from rich.theme import Theme
 from prompt_toolkit.styles import Style
@@ -67,7 +67,7 @@ def show_banner():
 | ctrl |  | alt |         EbraSha          | alt  |  | ctrl |   |
 '------'  '-----'--------------------------'------'  '------'   |
 |                                                               |
-|   [bold bright_cyan]Abdal Torrent Downloader ver 11.2[/bold bright_cyan]                           |
+|   [bold bright_cyan]Abdal Torrent Downloader ver 11.3[/bold bright_cyan]                           |
 |   [bright_magenta]Programmer: Ebrahim Shafiei (EbraSha)[/bright_magenta]                       |
 |   [bright_magenta]GitHub: https://github.com/ebrasha[/bright_magenta]                          |
 |   [bright_magenta]Email: Prof.Shafiei@Gmail.com[/bright_magenta]                               |
@@ -208,7 +208,9 @@ def interactive_mode():
         console.print("Invalid choice. Exiting.", style="error")
         sys.exit(1)
 
-    out_path = prompt("Enter output directory: ", style=prompt_style).strip()
+    # Use PathCompleter for directory paths
+    path_completer = PathCompleter()
+    out_path = prompt("Enter output directory: ", completer=path_completer, style=prompt_style).strip()
     out_path = os.path.abspath(out_path)
     os.makedirs(out_path, exist_ok=True)
 
@@ -237,13 +239,13 @@ def interactive_mode():
             sys.exit(1)
         download_magnet_rich(ses, magnet, out_path, stall_timeout=stall_timeout)
     elif choice == "2":
-        list_path = prompt("Enter path to magnet list file: ", style=prompt_style).strip()
+        list_path = prompt("Enter path to magnet list file: ", completer=path_completer, style=prompt_style).strip()
         download_batch_magnets_rich(ses, list_path, out_path, stall_timeout=stall_timeout)
     elif choice == "3":
-        torrent_path = prompt("Enter path to .torrent file: ", style=prompt_style).strip()
+        torrent_path = prompt("Enter path to .torrent file: ", completer=path_completer, style=prompt_style).strip()
         download_torrent_file_rich(ses, torrent_path, out_path, stall_timeout=stall_timeout)
     elif choice == "4":
-        dir_path = prompt("Enter directory containing .torrent files: ", style=prompt_style).strip()
+        dir_path = prompt("Enter directory containing .torrent files: ", completer=path_completer, style=prompt_style).strip()
         download_batch_torrents_rich(ses, dir_path, out_path, stall_timeout=stall_timeout)
 
 # Rich-enabled download functions for interactive mode

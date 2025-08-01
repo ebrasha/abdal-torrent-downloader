@@ -22,6 +22,7 @@
 - 🔄 **Batch Processing**: Download multiple torrents with progress tracking
 - 📊 **Progress Monitoring**: Real-time download progress with speed indicators
 - 🛡️ **Error Handling**: Robust error handling with detailed failure reporting
+- ⌨️ **Path Autocomplete**: Smart tab completion for file and directory paths in interactive mode
 
 ## 🚀 Installation
 
